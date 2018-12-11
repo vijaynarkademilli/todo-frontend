@@ -1,0 +1,23 @@
+
+<h1>Welcome !!</h1>
+
+<div class="container">
+  Welcome {{name}} You can find list of todo's <a routerLink="/todos">here</a>
+</div>
+
+
+<div class="container">
+  Custom Welcome Message Here
+  <button (click)="getWelcomeMessage()" class="btn btn-success">Get Welcome Message</button>
+</div>
+
+
+<div class="container" *ngIf="welcomeMessageFromService">
+  <h2> Your Message from server</h2>
+  {{welcomeMessageFromService}}
+</div>
+
+
+
+
+
